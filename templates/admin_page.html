@@ -5,7 +5,14 @@
     <title>Админка</title>
 </head>
 <body>
-    <h1>Добро пожаловать, администратор</h1>
-    <p>Здесь вы можете управлять сайтом.</p>
+    {% if is_admin %}
+        <ul>
+            <h1 style="text-align: center;">Добро пожаловать, {{ name_send }}!</h1>
+            <p style="text-align: center;">Здесь вы можете управлять сайтом.</p>
+        </ul>
+    {% else %}
+        <h1 style="text-align: center;">Доступ запрещен</h1>
+        <p style="text-align: center;">Вы не имеете права администратора</p>
+    {% endif %}
 </body>
 </html>

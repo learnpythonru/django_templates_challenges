@@ -17,9 +17,10 @@ from django.shortcuts import render
 def about_us_view(request):
     company_name = 'Learn Python'
     work_from_year = 2013
+    title = 'О нас'
 
     return render(
         request,
         'about_us.html',
-        context={'company_name': company_name, 'work_from_year': work_from_year},
+        context={'company_name': company_name, 'work_from_year': work_from_year, 'title': title},
     )

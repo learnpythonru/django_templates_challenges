@@ -9,8 +9,12 @@
     3. Поменяйте значение is_admin во вьюхе admin_page_view на True и снова посмотрите результат на странице http://127.0.0.1:8000/admin/
 """
 from django.shortcuts import render
+import random
 
 
 def admin_page_view(request):
-    is_admin = False
-    return render(request, 'admin_page.html', context={'is_admin': is_admin})
+    is_admin = True
+    list_name = ['Князь', 'Боярен', 'Дружинник', 'Холоп', 'Купец', 'Смерд']
+    name_send = random.choice(list_name)
+
+    return render(request, 'admin_page.html', context={'is_admin': is_admin, 'name_send': name_send})
