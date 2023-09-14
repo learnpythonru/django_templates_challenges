@@ -16,7 +16,7 @@ from django.shortcuts import render
 
 def about_us_view(request):
     company_name = 'Learn Python'
-    work_from_year = 2013
+    work_from_year = 2013 
     title = 'О нас'
 
     return render(

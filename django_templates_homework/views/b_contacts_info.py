@@ -10,5 +10,5 @@ from django.shortcuts import render
 """
 
 
-def contacts_info_view(request):
+def contacts_info_view(request): 
     return render(request, 'contacts_info.html')

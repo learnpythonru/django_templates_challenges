@@ -14,6 +14,6 @@ from django.shortcuts import render
 
 def registration_view(request):
     title = 'Форма регистрации'
-    tab = 'Регистрация'
+    tab = 'Регистрация' 
 
     return render(request, 'registration.html', context={'title': title, 'tab': tab})

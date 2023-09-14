@@ -15,6 +15,6 @@ import random
 def admin_page_view(request):
     is_admin = True
     list_name = ['Князь', 'Боярен', 'Дружинник', 'Холоп', 'Купец', 'Смерд']
-    name_send = random.choice(list_name)
+    name_send = random.choice(list_name) 
 
     return render(request, 'admin_page.html', context={'is_admin': is_admin, 'name_send': name_send})

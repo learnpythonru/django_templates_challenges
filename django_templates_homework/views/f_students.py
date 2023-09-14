@@ -16,7 +16,7 @@ def students_view(request):
         'Мария',
         'Петр',
         'Алексей',
-        'Станислав',
+        'Станислав', 
     ]
 
     return render(request, 'students.html', context={'students': students})
