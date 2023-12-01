@@ -12,10 +12,10 @@ from django.shortcuts import render
 
 def students_view(request):
     students = [
-        'Иван',
-        'Мария',
-        'Петр',
-        'Алексей',
+        "Иван",
+        "Мария",
+        "Петр",
+        "Алексей",
     ]
 
-    return render(request, 'level_1/students.html', context={'students': students})
+    return render(request, "level_1/students.html", context={"students": students})
