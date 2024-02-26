@@ -1,7 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-
 """
 Эта вьюха показывает телефонный номер простой стройкой, а браузер дорисовывает остальные HTML тэги.
 Но у нас есть свой темплэйт, где все эти тэги мы уже проставили и заполнен номер телефона.
@@ -14,6 +13,5 @@ from django.shortcuts import render
 
 
 def get_phone_number_view(request):
-    phone_number = '+79848522383'
+    return render(request, 'level_1/phone_number.html', )
 
-    return HttpResponse(phone_number)  # код писать тут

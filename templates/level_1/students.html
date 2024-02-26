@@ -5,7 +5,10 @@
     <title>Список студентов</title>
 </head>
 <body>
-    <h1>Список студентов</h1>
-    <!-- Здесь должен быть ваш код с использованием цикла for -->
+<h1>Список студентов</h1>
+    {% for student in students %}
+    <h3>Студент {{ forloop.counter }}</h3>
+    <p>{{ student }}</p>
+    {% endfor %}
 </body>
 </html>
